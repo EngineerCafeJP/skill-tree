@@ -21,19 +21,31 @@ flowchart TD
     DeepLearning --> GAN
     DeepLearning --> VAE
     DeepLearning --> DiffusionModel
-    DeepL
+
+    CNN --> R-CNN
+    CNN --> YOLO
+    CNN --> SSD
+    CNN --> MaskR-CNN
+    CNN --> YOLACT
 
     OD{ObjectDetection}
+    IS{InstanceSegmentation}
+    OC{ObjectClassification}
     LLM{LLM}
     IS{ImageSynthesis}
     IC{ImageClassification}
     SR{SpeechRecognition}
 
-    CNN --> OD
+    R-CNN --> OD
+    YOLO --> OD
+    SSD --> OD
     CNN --> IC
     LSTM --> SR
     Transformer --> LLM
     Transformer --> ViT
+    RNN --> IS
+    YOLACT --> IS
+    MaskR-CNN --> OC
     ViT --> OD
     ViT --> IC
     GAN --> IS
